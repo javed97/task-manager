@@ -4,8 +4,11 @@ phases:
     commands:
     - echo "Entered the pre-build phase"
     - pip install -r requirements.txt
-    - wget https://kojipkgs.fedoraproject.org//packages/sqlite/3.8.11/1.fc21/x86_64/sqlite-3.8.11-1.fc21.x86_64.rpm
-    - yum install sqlite-3.8.11-1.fc21.x86_64.rpm
+    - wget https://www.sqlite.org/2019/sqlite-autoconf-3280000.tar.gz
+    - tar zxvf sqlite-autoconf-3280000.tar.gz
+    - ./configure
+    - make
+    - make install
   build:
     commands:
     - echo "Entered build phase"
