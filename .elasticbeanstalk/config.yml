@@ -1,0 +1,19 @@
+branch-defaults:
+  ajay:
+    environment: Taskmanager-env
+environment-defaults:
+  Taskmanager-env:
+    branch: ajay
+    repository: task-manager
+global:
+  application_name: task-manager
+  default_ec2_keyname: task-manger-key-pair
+  default_platform: Python 3.8 running on 64bit Amazon Linux 2
+  default_region: eu-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: 250738637992_MSCCLOUD
+  sc: git
+  workspace_type: Application
