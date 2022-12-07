@@ -1,4 +1,4 @@
-# Kanban Task Manager
+# Task Manager
 ### Manage your teams, projects and tasks
 
 ### How To Run:
